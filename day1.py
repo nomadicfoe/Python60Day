@@ -73,3 +73,43 @@ def emp_high_low(emp : dict ):
     return high, low , above
 print(emp_high_low(employees))
 
+"""String Processing (Loops + Conditionals)
+Write a function that:
+Takes a sentence as input (e.g., "Python is amazing and fun").
+Counts how many words have more than 4 letters.
+Reverses the entire sentence (word order stays the same, just characters reverse)."""
+
+
+def string_processing(sent : str):
+    count = 0
+    words = sent.split()
+    for i in words:
+        if len(i) > 4 :
+            count += 1
+    rev = words[::-1]
+    return  count, rev
+
+sent =input("enter a sentence")
+
+count , rev   = string_processing(sent)
+print (rev , count)
+
+
+
+"""Mini Data File (File Handling Preview)
+Create a text file sales.txt with 5 numbers (each on a new line).
+Write Python code to:
+Read all numbers into a list.
+Compute their total and average."""
+def file_handling(path: str):
+    integer = []
+    with open(path,  'r') as f:
+        num = f.readlines()
+        for i in num:
+            integer.append(int(i))
+    return integer
+path = r"sales.txt"
+print(file_handling(path), sum(file_handling(path)), sum(file_handling(path))/len(file_handling(path)))
+
+
+
