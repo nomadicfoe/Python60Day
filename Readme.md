@@ -5,5 +5,5 @@
 - Hello World Program , reverse a string , factorial of a number 
 - sales trcker lists + loops
 - Dictionaries and functions
-#### Day 1: Python Installation and Setup
+#### Day 2: Python Installation and Setup
 - Dictionaries in List Operations 
