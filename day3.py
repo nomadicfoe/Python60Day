@@ -60,3 +60,33 @@ def sales_data(sales: dict):
 
     return max_month , max_sales , min_month , min_sales , total_sales
 print(sales_data(monthly_sales))
+
+
+"""Student Pass/Fail (Conditionals)
+Reuse your students list from Day 2.
+Write a function pass_fail(students, cutoff) that:
+Returns 2 lists → one with names of students who passed (≥ cutoff), and one with those who failed."""
+
+students = [
+    {"name": "Alice", "marks": 85, "grade": "A"},
+    {"name": "Bob", "marks": 72, "grade": "B"},
+    {"name": "Charlie", "marks": 91, "grade": "A"},
+    {"name": "David", "marks": 65, "grade": "C"},
+    {"name": "Evelyn", "marks": 78, "grade": "B"},
+    {"name": "Frank", "marks": 55, "grade": "D"},
+    {"name": "Grace", "marks": 88, "grade": "A"},
+    {"name": "Hannah", "marks": 60, "grade": "C"},
+]
+
+
+
+def  pass_fail(students: list , cutoff):
+    passed  = []
+    failed = []
+    for i in students:
+        if i["marks"] >= cutoff :
+            passed.append(i["name"])
+        else:
+            failed.append(i["name"])
+    return passed , failed
+print(pass_fail(students, 85))

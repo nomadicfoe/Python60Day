@@ -9,3 +9,5 @@
 - Dictionaries in List Operations 
 #### Day 3: loops and aggregation
 - loops , conditionals and aggregation
+#### Day 4: conditionals and functions
+- loops , conditionals and functions
